@@ -1,0 +1,5 @@
+<h2>Users</h2>
+{{#each model as |user|}}
+  <p>{{user.username}}</p>
+{{/each}}
+{{link-to 'Add New' 'users.add'}}
