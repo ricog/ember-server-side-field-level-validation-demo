@@ -1,4 +1,4 @@
-<p>This is a demo of a basic add form. Entering "not unique" into the username field and submitting will demonstrate a validation failure at the database for a non-unique username.</p>
+<p>This is a demo of server side username validation. Type into the username field to test. After 500 milliseconds, or leaving the field, the form will call out to the server to confirm if the value is unique. Entering "not unique" will demonstrate a validation failure for a username only the server knows about.</p>
 <form class="users-add">
   {{app-input fieldName='username' model=model value=model.username label='Username'}}
   {{app-input fieldName='firstName' model=model value=model.firstName label='First Name'}}

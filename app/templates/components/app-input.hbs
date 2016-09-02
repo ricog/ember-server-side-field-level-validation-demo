@@ -1,5 +1,5 @@
 <label>{{label}}</label>
-{{input id=fieldName value=value}}
+{{input id=fieldName value=value focus-out="validate"}}
 {{#each errors as |error|}}
   <div class="error">
     {{error.message}}
